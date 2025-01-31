@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  background: url(https://img.freepik.com/premium-photo/blue-wallpapers-that-will-make-your-desktop-look-dark-blue-wallpaper-blue-wallpaper-blue-wallpaper-blue-wallpaper-blue-wallpaper-blue-wallpaper-blue-wallpaper_894754-380.jpg)
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+header {
+  background-color: #3b3b98;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.projects {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h2 {
+  font-size: 1.8rem;
+  color: #3b3b98;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.project-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-card li {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #555;
+  position: relative;
+  padding-left: 30px;
+}
+
+.project-card li:before {
+  content: "\2022";
+  font-size: 24px;
+  color: #3b3b98;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.project-card ul li strong {
+  color: #333;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #3b3b98;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+  border-top: 2px solid #f0f4f8;
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .project-card li {
+    font-size: 0.9rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .project-card li {
+    font-size: 0.8rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
